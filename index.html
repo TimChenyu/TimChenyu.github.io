@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @import url('https://fonts.apple.com/css2?family=San+Francisco&display=swap');
+
+    .navbar {
+      width: 53.5%;
+      height: 50px;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 1;
+      border-bottom: 2px solid black;
+      box-sizing: border-box;
+    }
+
+    .navbar-links-wrapper {
+      display: flex;
+      justify-content: center;
+      /* add this */
+      align-items: center;
+      width: 30%;
+      /* reduce the width */
+    }
+
+    .navbar a {
+      font-weight: lighter;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      padding: 0 20px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ddd;
+      transition: color 0.5s ease;
+    }
+
+    .navbar-logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .navbar-logo img {
+      height: 30px;
+      /* adjust this value to control the size of the logo */
+    }
+
+    .section {
+      display: none;
+      padding: 5% 10%;
+      font-family: 'San Francisco', sans-serif;
+    }
+
+    .show {
+      display: block;
+    }
+
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      padding: 0 5%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .header h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .header nav {
+      display: flex;
+    }
+
+    .header nav a {
+      font-weight: bold;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .header nav a.active {
+      color: black;
+    }
+
+    .header nav a:hover {
+      color: gray;
+    }
+
+    .header nav a:focus {
+      outline: 2px solid lightgray;
+      outline-offset: 2px;
+    }
+
+    .header nav button {
+      background-color: white;
+      border: 2px solid lightgray;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-right: 20px;
+      padding: 10px 20px;
+    }
+
+    .header nav button:hover {
+      background-color: lightgray;
+    }
+
+    .header nav button:focus {
+      outline: 2px solid lightgray;
+      outline-offset: 2px;
+    }
+
+    .content {
+      padding: 20px 0;
+    }
+
+    .content h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1em;
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+    }
+
+    .content img {
+      float: left;
+      height: auto;
+      margin-right: 20px;
+      margin-left: 20px;
+      /* add this line to increase padding on the left side */
+      width: 30%;
+    }
+
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .content table th {
+      border: 1px solid lightgray;
+      padding: 10px;
+    }
+
+    .content table td {
+      border: 1px solid lightgray;
+      padding: 10px;
+    }
+
+    .footer {
+      font-size: 0.8em;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      /* remove underlines */
+      color: black;
+      font-size: 16px;
+      padding: 8px 16px;
+      border: 1px solid gray;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #e0e0e0;
+      /* lighter color */
+      transition: background-color 0.5s ease;
+      /* slower transition */
+    }
+    img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+    .section {
+      width: 60%;
+      padding: 25px 20px;
+      font-family: 'San Francisco', sans-serif;
+      margin: 0 auto;
+    }
+
+    #section1 .left-side {
+      padding-left: 40px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="navbar">
+    <div class="logo">My Logo</div>
+    <div style="display: flex; justify-content: flex-end;">
+      <a href="#section1">Home</a>
+      <a href="#section2">Research</a>
+      <a href="#section3">Contact</a>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <section id="section1" class="section show">
+
+    <div style="display: flex;">
+      <img src="https://twitter.com/TimCYZhang/photo">
+      <div style="margin-left: 20px;">
+        <h3 style="font-weight: bold; font-size: 24px;">About Me</h3>
+        <p style="font-size: 16px;">My name is Chen Yu (Tim) Zhang and I am a research student.</p>
+      </div>
+    </div>
+    <p style="margin-top: 20px; font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod euismod turpis, id ullamcorper est tincidunt vel. Sed at risus feugiat, congue mi vitae, bibendum velit.</p>
+    <br>
+    <br>
+    <br>
+    <div class="buttons">
+      <a class="button" href="#">Twitter</a>
+      <a class="button" href="#">CSDN</a>
+      <a class="button" href="#">LinkedIn</a>
+      <a class="button" href="#">CV</a>
+    </div>
+
+  </section>
+
+  <div id="section2" class="section">
+    <h2>Research</h2>
+    <p>My research interests are: medical image analysis, digital twins, AI Healthcare</p>
+  </div>
+  <div id="section3" class="section">
+    <h2>Contact</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  </div>
+  <script>
+    const navbarLinks = document.querySelectorAll(".navbar a");
+    navbarLinks.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.hash);
+        document.querySelectorAll(".section").forEach(section => {
+          section.classList.remove("show");
+        });
+        target.classList.add("show");
+      });
+    });
+  </script>
+  <footer style="text-align: center; font-size: 10px; position: fixed; bottom: 0; width: 100%; padding-bottom: 10px;">Created by ChatGPT</footer>
+
+
+</body>
+
+</html>
