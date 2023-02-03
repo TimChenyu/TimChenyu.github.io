@@ -217,6 +217,13 @@
     #section1 .left-side {
       padding-left: 40px;
     }
+
+    .logo img {
+      max-width: 100%;
+      /* sets the maximum width of the logo to 100% of the width of the navbar */
+      height: auto;
+      /* preserves the aspect ratio of the image */
+    }
   </style>
 
 </head>
@@ -224,13 +231,14 @@
 
 <body>
   <div class="navbar">
-    <div class="logo">My Logo</div>
+    <div class="logo">
+      <img src="media\logo.jpg" style="max-height: 40px; max-width: 40px;">
+    </div>
     <div style="display: flex; justify-content: flex-end;">
       <a href="#section1">Home</a>
       <a href="#section2">Research</a>
       <a href="#section3">Contact</a>
     </div>
-
   </div>
   <br>
   <br>
@@ -240,7 +248,8 @@
       <img src="media\pfp.png">
       <div style="margin-left: 20px;">
         <h3 style="font-weight: bold; font-size: 24px;">About Me</h3>
-        <p style="font-size: 16px;">My name is Chen Yu (Tim) Zhang and I am a research student at Cambridge University working on medical image analysis under the supervision of Dr Challenger Mishra. My research interests are medical image analysis, digital twins, AI Healthcare. My research goal is to create solutions to make healthcare treatments accessible to more people. I like to play snooker on my free time and I am a fully WPBSA certified coach.</p>
+        <p style="font-size: 16px;">My name is Chen Yu (Tim) Zhang and I am a research student at Cambridge University working on medical image analysis under the supervision of Dr Challenger Mishra. My research interests are medical image analysis,
+          digital twins, AI Healthcare. My research goal is to create solutions to make healthcare treatments accessible to more people. I like to play snooker on my free time and I am a fully WPBSA certified coach.</p>
       </div>
     </div>
     <br>
@@ -284,7 +293,8 @@
       </div>
       <div style="width: 70%; padding: 10px;">
         <h3>Modelling State Transitions in Gene Regulatory Network</h3>
-        <p>This project aims to create mathematical models for gene regulatory networks and simulate their state transitions. We aim to encode the state transitions into latent space to explore their relations. Also it will be published as a modular python package to create customizable grn models</p>
+        <p>This project aims to create mathematical models for gene regulatory networks and simulate their state transitions. We aim to encode the state transitions into latent space to explore their relations. Also it will be published as a modular
+          python package to create customizable grn models</p>
       </div>
     </div>
 
@@ -294,8 +304,9 @@
       </div>
       <div style="width: 70%; padding: 10px;">
         <h3>Facial Landmark Detection on Cleftlips with Data Synthesis via Image Inpainting</h3>
-        <p> This work aims to develop a machine learning model that can detect the facial landmarks of cleft lip patients that can be later adapted into a deep learning model that can annotate cleft lip surgical facial landmarks. We explored different data generation methods such as photo
-editing and facial inpainting using the CTSDG model</p>
+        <p> This work aims to develop a machine learning model that can detect the facial landmarks of cleft lip patients that can be later adapted into a deep learning model that can annotate cleft lip surgical facial landmarks. We explored
+          different data generation methods such as photo
+          editing and facial inpainting using the CTSDG model</p>
       </div>
     </div>
 
